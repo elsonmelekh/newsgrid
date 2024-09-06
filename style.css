@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1,h2,h3,h4,h5,h6{font-family: staatliches, cursive;
+  font-weight: 400;
+}
+
+:root{
+    --red-color: #c72727;
+    --orange-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+body{
+  background-color: var(--light-color);
+  font-family: lato, sans-serif;
+  font-weight: 400;
+}
+img:hover{
+  opacity: 0.9;
+
+  
+}
+.container{
+  max-width: 1100px;
+  overflow: hidden;
+  margin: auto;
+}
+a{text-decoration: none;}
+ul li{
+  list-style: none;
+}
+#navmenu{
+background-color: white;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
+
+#navmenu .container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem ;
+}
+.nav-links ul{
+ display: flex;
+ gap: 1rem;
+ justify-content: flex-end;
+ align-items: center;
+}
+.nav-links ul a{
+  color: var(--dark-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.5rem;
+ 
+}
+.nav-links ul a:hover{
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.nav-links ul .home{
+background-color: var(--red-color);
+color: #f4f4f4;
+
+}
+
+.showcase{
+  background: url(./image_resources/featured.jpg) no-repeat center center/cover;
+  height: 70vh;
+  position: relative ;
+
+ 
+}
+.showcase::before{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  
+}
+.showcase .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  align-items: center;
+  
+}
+.showcase-content{
+  z-index: 1;
+  color: white;
+}
+.category{
+  display: inline-block;
+  border-radius: 15px;
+  padding: 0.4rem;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+.category-sports{
+  background-color: var(--orange-color);
+}
+
+.btn{
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.showcase-content .btn{
+  background-color: var(--red-color);
+}
+.showcase-content p{
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+.picks{
+  margin-top: 2rem;
+}
+
+
+.first-section{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1rem;
+}
+.img-box{
+  width: 100%;
+}
+.first-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.content-img{
+  width: 100%;
+  object-fit: cover;
+}
+.content-text{
+  width: 100%;
+
+}
+.content-text .ent{
+  background-color: var(--ent-color);
+}
+.content-text{
+ padding: 0 1rem;
+}
+h3 a{
+  color: #333;
+}
+h3{
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+p{
+  font-size: 1rem;
+}
+.card-content p{
+  padding-bottom: 1rem ;
+}
+.second{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+.second h3 a{
+  color: white;
+}
+.cardmenu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+.card-content .content-img,.content-text{
+  width: 100%;
+}
+.cardmenu .first{
+  background-color: white;
+  margin: 2rem 0;
+}
+.content-text .tech{
+  background-color: var(--tech-color);
+}
+.first{
+  padding: 1rem;
+}
+.red{
+  background-color: var(--red-color);
+  color: white;
+}
+.red h3 a{
+  color: white;
+}
+.footer-section{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 2rem;
+}
+footer{
+  background-color: var(--dark-color);
+  padding: 4rem;
+  color: white;
+  margin-top: 1rem;
+}
+.links ul li{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  border-bottom: 1px dashed rgb(66, 64, 64);
+
+}
+.links ul a{
+  color: white;
+}
+
+.links ul a:hover{
+  color: #c72727;
+}
+.footer-section .form input{
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  height: 2rem;
+  outline-color: #c72727;
+  margin-top: 1rem;
+
+}
+.reverse{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.footer-section .form button{
+  width: 100%;
+  height: 2rem;
+  background-color: #c72727;
+  color: white;
+  border: none;
+  margin-top: 0.5rem;
+
+}
+.footer-section .form button:hover{
+  opacity: 0.9;
+}
+.joinus button{
+  background-color: #f99500;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  margin-top: 0.5rem;
+}
+.joinus button:hover{
+  opacity: 0.8;
+}
+h4{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media(max-width: 768px){
+  .nav-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    background-color: #f3f3f3;
+    margin-bottom: 0.3rem;
+    
+   }
+   .socials{
+    display: none;
+   }
+   #navmenu .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+
+  }
+  .container .navlogo{
+    width: 150px;
+
+  }
+  .showcase{
+    height: 80vh;
+  }
+  .showcase-content{
+    width: 300px;
+    height: 200px;
+    padding: 1rem;
+    
+  }
+  .showcase-content p{
+    font-size: 0.9rem;
+    padding: 0;
+    
+  }
+  .showcase-content h1{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+      }
+      .showcase-content button{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+      }
+      .first-section{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .first-content{
+        flex-direction: column;
+      }
+      .cardmenu{
+        grid-template-columns: 1fr;
+        margin: 0;
+  
+      }
+      .mobile{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .card-content p{
+        padding: 1rem;
+      }
+      .cardmenu .first{
+        margin: 0.5rem 0;
+      }
+      .second{
+        margin: 1rem 0;
+      }
+      .footer-section{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+      }
+      footer{
+        padding: 1rem;
+      }
+      .footer-section h4{
+        font-size: 1.2rem;
+      }
+      .footer-section p{
+        font-size: 1rem;
+      }
+      .links ul a{
+        font-size: 1rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+      h3{
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+      }
+  
+}
